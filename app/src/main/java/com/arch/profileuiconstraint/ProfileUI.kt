@@ -159,13 +159,13 @@ fun ProfileUi() {
                                     width = Dimension.fillToConstraints
                                 }
                                 .padding(horizontal = 20.dp)
-                                .height(200.dp),
+                                .height(500.dp),
                             content = {
                                 items(randomSizedPhotos.size) { index ->
                                     SubcomposeAsyncImage(
                                         model = randomSizedPhotos[index],
                                         loading = {
-                                            CircularProgressIndicator(modifier = Modifier.size(50.dp))
+                                            CircularProgressIndicator(modifier = Modifier.size(30.dp))
                                         },
                                         contentDescription = "",
                                         modifier = Modifier
